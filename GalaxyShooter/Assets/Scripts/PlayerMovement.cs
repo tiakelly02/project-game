@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//This is script is for the players movement 
+//This is script is for the players movement and for the player to fire bullets at enemies
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -40,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
     void FireBullet()
      {
           if (Input.GetKey(KeyCode.Space)) { 
-           projectileClone = Instantiate(projectile, new Vector3(player.transform.position.x,player.transform.position.y +0.7f,0),player.transform.rotation) as GameObject; 
+           projectileClone = Instantiate(projectile, new Vector3(player.transform.position.x,player.transform.position.y +0.7f,0),player.transform.rotation)as GameObject; 
         }
     }
 }
